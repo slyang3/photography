@@ -1,0 +1,5 @@
+.user-motto {
+  font-size: 28rpx;
+  color: red; }
+  .user-motto text {
+    color: blue; }
