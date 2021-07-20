@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="main">
+        <banner bannerList="{{bannerList}}"/>
+
+        <product_pic productList="{{productList}}"/>
+    </view>
+</view>

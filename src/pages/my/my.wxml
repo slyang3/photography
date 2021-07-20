@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="main">
+        <view class="banner_wrap">
+            <swiper id="swiper" class="header_banner" interval="3000"  circular="true" current="{{bannerCurrent}}" autoplay="{{bannerAutoPlay}}" bindanimationfinish="changeItem">
+                <block wx:for='{{bannerList}}' wx:key="index" wx:for-index="index">
+                    <swiper-item class="swiper-item">
+                        <image class="image" src="{{item.bannerUri}}" bind:tap="bannerDetail" data-item="{{item}}"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+            <view class="indicator_dots"><i wx:for='{{bannerList}}' wx:key="index" wx:for-index="index" class="{{bannerCurrent==index?'act':''}}" data-index="{{index}}" catch:tap="changeBanner"></i></view>
+        </view>
+
+        <!-- 首页分类 -->
+        <view class="detail_bar">
+            <view class="classify_list" wx:for="{{classifyList}}" bind:tap="requiredCourseBlink">
+                <view class="img_box"><image src="/assets/image/icon_menu_{{index+1}}.png"></image></view>
+                <view class="text">{{item}}</view>
+            </view>
+        </view>
+
+        <product_pic productList="{{productList}}"/>
+    </view>
+
+    <tabbar productList="{{productList}}"/>
+</view>

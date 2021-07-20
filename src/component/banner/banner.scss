@@ -1,0 +1,38 @@
+.header_banner{
+    position: relative;
+    margin: 0 auto;
+    width: 710rpx;
+    height: 340rpx;
+    overflow: hidden;
+    border-radius: 16rpx;
+    .swiper-item {
+      border-radius: 16rpx;
+      .image {
+        border-radius: 16rpx;
+        width: 710rpx;
+        height: 340rpx;
+      }
+    }
+}
+
+.indicator_dots {
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    i {
+      display: inline-block;
+      width: 12rpx;
+      height: 10rpx;
+      opacity: 0.5;
+      border-radius: 5rpx;
+      margin: 0 6rpx;
+      background: #000000;
+      &.act {
+        opacity: 1;
+        width: 24rpx;
+        height: 10rpx;
+      }
+    }
+}

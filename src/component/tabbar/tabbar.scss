@@ -1,0 +1,54 @@
+.tabbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    background: #EFEFF3;
+    box-shadow: inset 0rpx 1rpx 0rpx 0rpx rgba(0,0,0,0.11);
+    padding-bottom:  env(safe-area-inset-bottom);
+
+    .tab_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0rpx;
+        flex-grow: 1;
+        height: 120rpx;
+        .btn {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            &.fr_btn{
+                background-color: #EFEFF3;
+                .f_view{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    position: relative;
+                    padding: 6rpx 0rpx;
+                    height: 98rpx;
+                    image{
+                        width: 64rpx;
+                        height: 64rpx;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                    text{
+                        font-size: 18rpx;
+                        color: #999;
+                        font-weight: 500;
+                        font-family: PingFangSC-Regular;
+
+                        &.select_txt {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<!--logs.wxml-->
+<view class="container">
+	<view class="nav">
+		<view class="nav_list {{navItem == 1?'selected':''}}" data-index='1' bindtap="changeTab">校企信息
+			<image wx:if="{{navItem == 1}}" src="/assets/image/tab_selected.png" />
+		</view>
+		<view class="nav_list {{navItem == 2?'selected':''}}" data-index='2' bindtap="changeTab">我需要的
+			<image wx:if="{{navItem == 2}}" src="/assets/image/tab_selected.png" />
+		</view>
+		<view class="nav_list {{navItem == 3?'selected':''}}" data-index='3' bindtap="changeTab">我提供的
+			<image wx:if="{{navItem == 3}}" src="/assets/image/tab_selected.png" />
+		</view>
+	</view>
+	<view class="company">
+		<view class="company_list" wx:for="{{companyList}}">
+			<image src="{{item.logo}}" />
+			<view class="company_info">
+				<view class="company_header">
+					<text class="name">{{item.name}}</text>
+					<view class="label">
+						<text wx:for="{{item.labelList}}" wx:for-item="items" wx:index="indexs">{{items}}</text>
+					</view>
+				</view>
+				<text class="company_intro">{{item.introduce}}</text>
+				<view class="company_other">
+					<view class="company_tips">
+						<text>推荐校友：{{item.schoolFriend}} </text>
+						<text>与推荐企业关系：{{item.connext}}</text>
+					</view>
+					<button>问答</button>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="bottom">
+		<view class="left">我的校企</view>
+		<view class="right">发布信息</view>
+	</view>
+</view>

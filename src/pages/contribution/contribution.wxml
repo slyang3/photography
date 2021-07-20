@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="main">
+        <view class="label">参赛作品标题</view>
+        <input type="text" placeholder="请输入参赛作品标题" placeholder-class="input-placeholder" />
+        <view class="label">作品简介</view>
+        <textarea class="descript" name="descript" placeholder-class="textarea-placeholder" placeholder="请填写作品简介…"></textarea>
+        <view class="label">拍摄时间</view>
+        <view class="choose_time">
+            <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <view class="picker" wx:if="{{date}}">
+                {{date}}
+                </view>
+                <view class="picker small" wx:else>
+                请选择拍摄年份
+                </view>
+            </picker>
+            <image src="/assets/image/icon_right.png" />
+        </view>
+        <view class="label">相机</view>
+        <input type="text" placeholder="请输入拍摄相机型号" placeholder-class="input-placeholder" />
+        <view class="label">光圈</view>
+        <input type="text" placeholder="请输入拍摄光圈数值" placeholder-class="input-placeholder" />
+        <view class="label">速度</view>
+        <input type="text" placeholder="请输入拍摄快门速度" placeholder-class="input-placeholder" />
+        <view class="label">IOS</view>
+        <input type="text" placeholder="请输入" placeholder-class="input-placeholder" />
+        
+        <view class="label">作品上传<text>（最多5张）</text></view>
+        <view class="upload_model">
+            <view class="up_img_list {{imgList.length > 0?'up_img_list_margin':''}}">
+                <view class="img_li" wx:for="{{imgList}}">
+                    <image class="pic" src="{{item}}" />
+                    <image class="icon_close" src="/assets/image/icon_close.png" />
+                </view>
+                <view class="img_li">
+                    <image class="img_demo" bindtap="chooseImage" src="/assets/image/icon_add_pic.png" />
+                </view>
+            </view>
+        </view>
+
+        <text class="tips">温馨提示：</text>
+        <text class="tips">提示信息文本提示信息文本提示信息文本提示信息文本提示信息文本提示信息文本提示信息文本</text>
+
+        <button class="pub">确认发布</button>
+    </view>
+</view>

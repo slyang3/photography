@@ -1,0 +1,49 @@
+.main {
+	padding: 20rpx 30rpx;
+    .search_bar {
+		padding-left: 24rpx;
+		margin-bottom: 10rpx;
+		height: 72rpx;
+		border: 2rpx solid #333333;
+		border-radius: 36rpx;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		image {
+			width: 38rpx;
+			height: 34rpx;
+		}
+
+		input {
+			padding-left: 10rpx;
+			width: 510rpx;
+			height: 72rpx;
+
+			&.input-placeholder {
+				font-family: PingFangSC-Medium;
+				font-size: 24rpx;
+				color: #999999;
+				font-weight: 500;
+			}
+		}
+
+		button {
+			width: 109rpx;
+			height: 72rpx;
+			border-left: 2rpx solid #333333;
+			background: none;
+			padding: 0;
+			margin: 0;
+			border-radius: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			&::after {
+				border: 0
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="main">
+        <view class="label">照片信息描述</view>
+        <textarea class="descript" name="descript" placeholder-class="textarea-placeholder" placeholder="请输入照片描述"></textarea>
+        <view class="label">图片上传</view>
+        <view class="upload_model">
+            <view class="up_img_list {{imgList.length > 0?'up_img_list_margin':''}}">
+                <view class="img_li" wx:for="{{imgList}}">
+                    <image class="pic" src="{{item}}" />
+                    <image class="icon_close" src="/assets/image/icon_close.png" />
+                </view>
+                <view class="img_li">
+                    <image class="img_demo" bindtap="chooseImage" src="/assets/image/icon_add_pic.png" />
+                </view>
+            </view>
+        </view>
+
+        <button class="pub">确认发布</button>
+    </view>
+
+    <tabbar/>
+</view>

@@ -1,0 +1,44 @@
+<view class="product_content" wx:for="{{productList}}">
+    <block>
+        <view class="header_info" wx:if="{{!item.isNotShowOperate}}">
+            <image src="{{item.headerUrl}}" />
+            <view class="header_word_info">
+                <text class="name">{{item.name}}</text>
+                <text class="time">{{item.time}}</text>
+            </view>
+        </view>
+        <view class="header_info" wx:else>
+            <image class="icon_film" src="/assets/image/icon_film.png" />
+            <view class="header_word_info">
+                <text class="name">{{item.name}}</text>
+            </view>
+        </view>
+        <view class="pruduct_pic">
+            <image src="{{item.productUrl[0]}}" />
+            <image class="icon_heji" wx:if="{{item.productUrl.length > 1}}" src="/assets/image/icon_heji.png" />
+        </view>
+        <view class="descript">
+            {{item.descript}}
+        </view>
+        <view class="opearte" wx:if="{{!item.isNotShowOperate}}">
+            <view class="left">
+                <view class="left_menu">
+                    <image src="/assets/image/icon_share.png" />
+                    <text>分享</text>
+                </view>
+
+                <view class="left_menu">
+                    <image src="/assets/image/icon_msg.png" />
+                    <text>{{item.msgNum}}</text>
+                </view>
+            </view>
+
+            <view class="right">
+                <view class="left_menu">
+                    <image src="/assets/image/icon_dianzan.png" />
+                    <text>{{item.thumbsUpNum}}</text>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

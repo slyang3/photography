@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="main">
+        <!-- 搜索 -->
+        <view class="search_bar">
+            <image src="/assets/image/icon_search.png" />
+            <input type="text" placeholder="请输入校友姓名、行业关键字" placeholder-class="input-placeholder"/>
+            <button>取消</button>
+        </view>
+
+        <view class="content">
+            <person-model personList="{{personList}}"/>
+        </view>
+    </view>
+</view>

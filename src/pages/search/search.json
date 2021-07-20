@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "person-model": "../../component/person-model/person-model"
+  },
+  "navigationBarTitleText": "搜索"
+}

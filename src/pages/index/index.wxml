@@ -1,6 +1,18 @@
 <!--index.wxml-->
 <view class="container">
-    <view class="user-motto">
-        <text>11222</text>
+    <view class="main">
+       <banner bannerList="{{bannerList}}"/>
+
+        <!-- 首页分类 -->
+        <view class="detail_bar">
+            <view class="classify_list" wx:for="{{classifyList}}" data-index="{{index}}" bindtap="requiredCourseBlink">
+                <view class="img_box"><image src="/assets/image/icon_menu_{{index+1}}.png"></image></view>
+                <view class="text">{{item}}</view>
+            </view>
+        </view>
+
+        <product_pic productList="{{productList}}"/>
     </view>
+
+    <tabbar/>
 </view>

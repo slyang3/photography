@@ -1,0 +1,82 @@
+.person_content {
+    margin-top: 30rpx;
+    height: 270rpx;
+    background: #FFFFFF;
+    box-shadow: 0rpx 3rpx 10rpx 0rpx rgba(208,216,229,0.85);
+    border-radius: 10rpx;
+    padding: 0 30rpx 0 30rpx;
+
+    .person_info {
+        display: flex;
+        flex-direction: row;
+
+        image {
+            margin-top: 30rpx;
+            width: 84rpx;
+            height: 84rpx;
+        }
+
+        .other_info {
+            margin-left: 30rpx;
+            display: flex;
+            flex-direction: column;
+            text {
+                margin-top: 15rpx;
+                font-family: PingFangSC-Regular;
+                font-size: 24rpx;
+                color: #666666;
+                font-weight: 400;
+                &.name {
+                    margin-top: 31rpx;
+                    font-family: PingFangSC-Medium;
+                    font-size: 28rpx;
+                    color: #333333;
+                    font-weight: 500;
+                }
+
+                &.wxchat {
+                    margin-left: 51rpx;
+                }
+
+                &.email {
+                    margin-top: 8rpx;
+                }
+            }
+
+            .connext_info {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .person_grad {
+        margin-top: 24rpx;
+        padding: 25rpx 30rpx 0 30rpx;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2rpx solid #E4E4E4;
+
+        view {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            font-family: PingFangSC-Medium;
+            font-size: 24rpx;
+            color: #666666;
+            font-weight: 500;
+
+            text {
+                font-family: PingFangSC-Medium;
+                font-size: 32rpx;
+                color: #333333;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<view class="banner_wrap">
+    <swiper id="swiper" class="header_banner" interval="3000"  circular="true" current="{{bannerCurrent}}" autoplay="{{bannerAutoPlay}}" bindanimationfinish="changeItem">
+        <block wx:for='{{bannerList}}' wx:key="index" wx:for-index="index">
+            <swiper-item class="swiper-item">
+                <image class="image" src="{{item.bannerUri}}" bind:tap="bannerDetail" data-item="{{item}}"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="indicator_dots"><i wx:for='{{bannerList}}' wx:key="index" wx:for-index="index" class="{{bannerCurrent==index?'act':''}}" data-index="{{index}}" catch:tap="changeBanner"></i></view>
+</view>

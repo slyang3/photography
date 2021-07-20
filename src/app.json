@@ -1,12 +1,17 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/pub/pub",
+    "pages/search/search",
+    "pages/my/my",
+    "pages/art/art",
+    "pages/contribution/contribution",
+    "pages/school/school"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "摄影小组",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",

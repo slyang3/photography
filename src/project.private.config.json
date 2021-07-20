@@ -1,0 +1,48 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pub/pub",
+          "pathName": "pages/pub/pub",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/art/art",
+          "pathName": "pages/art/art",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/contribution/contribution",
+          "pathName": "pages/contribution/contribution",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/school/school",
+          "pathName": "pages/school/school",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

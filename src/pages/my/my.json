@@ -1,7 +1,6 @@
 {
   "usingComponents": {
     "product_pic": "../../component/product_pic/product_pic",
-    "tabbar": "../../component/tabbar/tabbar",
-    "banner":"../../component/banner/banner"
+    "tabbar": "../../component/tabbar/tabbar"
   }
 }

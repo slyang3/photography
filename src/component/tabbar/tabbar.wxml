@@ -1,0 +1,12 @@
+<view class="tabbar">
+    <view wx:for="{{tabList}}" wx:key="index" class="tab_item home {{cur==item.key?'cur':''}}" data-tar="{{item.key}}">
+        <form report-submit="{{true}}" data-tar="{{item.key}}" data-path="{{item.path}}"  data-text="{{item.text}}" bindsubmit="formSubmit">
+            <button class='btn fr_btn' formType="submit">
+                <view class="f_view">
+                    <image src="{{cur==item.key ?item.actSrc:item.src}}"></image>
+                    <text class="{{cur==item.key?'select_txt':''}}">{{item.text}}</text>
+                </view>
+            </button>
+        </form>
+    </view>
+</view>
