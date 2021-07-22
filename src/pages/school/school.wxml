@@ -12,7 +12,7 @@
 		</view>
 	</view>
 	<view class="company">
-		<view class="company_list" wx:for="{{companyList}}">
+		<view class="company_list" wx:for="{{companyList}}" bind:tap="lookAlumni" data-id="{{item.id}}">
 			<image src="{{item.logo}}" />
 			<view class="company_info">
 				<view class="company_header">
@@ -33,7 +33,7 @@
 		</view>
 	</view>
 	<view class="bottom">
-		<view class="left">我的校企</view>
-		<view class="right">发布信息</view>
+		<view class="left" bind:tap="pubSchool">我的校企</view>
+		<view class="right" bind:tap="pubInfo">发布信息</view>
 	</view>
 </view>

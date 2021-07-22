@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="main">
+        <image class="max_image" mode="widthFix" src="{{productList.productUrl}}" />
+
+        <view class="header_info">
+            <image class="icon_film" src="/assets/image/icon_film.png" />
+            <view class="header_word_info">
+                <text class="name">摄影参数</text>
+            </view>
+        </view>
+
+        <view class="photo_other_info">
+            <view class="school_info_bottom">
+                <view class="list">
+                    <text>拍摄相机：</text>
+                    <text>Canon ESC-IDs MarkIII</text>
+                </view>
+                <view class="list">
+                    <text>拍摄光圈：</text>
+                    <text>f/8</text>
+                </view>
+                <view class="list">
+                    <text>拍摄快门速度：</text>
+                    <text>1/400</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="opearte">
+            <view class="left">
+                <view class="left_menu">
+                    <image src="/assets/image/icon_share.png" />
+                    <text>分享</text>
+                </view>
+
+                <view class="left_menu">
+                    <image src="/assets/image/icon_msg.png" />
+                    <text>1234</text>
+                </view>
+            </view>
+
+            <view class="right">
+                <view class="left_menu">
+                    <image src="/assets/image/icon_dianzan.png" />
+                    <text>465</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

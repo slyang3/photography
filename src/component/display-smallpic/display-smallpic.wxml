@@ -1,0 +1,11 @@
+<view class="display-small">
+    <view class="header_info">
+        <!-- <image class="icon_film" src="/assets/image/icon_film.png" /> -->
+        <view class="header_word_info">
+            <text class="name">参赛作品</text>
+        </view>
+    </view>
+    <view class="img-list">
+        <image wx:for="{{smallImgList}}" src="{{item.url}}" bind:tap="lookPhotoDetail"/>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "person-model": "../../component/person-model/person-model",
+    "display-smallpic": "../../component/display-smallpic/display-smallpic"
+  },
+  "navigationBarTitleText": "校友信息"
+}

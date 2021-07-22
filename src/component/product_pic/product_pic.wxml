@@ -13,7 +13,7 @@
                 <text class="name">{{item.name}}</text>
             </view>
         </view>
-        <view class="pruduct_pic">
+        <view class="pruduct_pic" bind:tap="lookArtDetail">
             <image src="{{item.productUrl[0]}}" />
             <image class="icon_heji" wx:if="{{item.productUrl.length > 1}}" src="/assets/image/icon_heji.png" />
         </view>

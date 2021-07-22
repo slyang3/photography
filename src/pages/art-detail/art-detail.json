@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "product_pic":"../../component/product_pic/product_pic",
+        "display-smallpic": "../../component/display-smallpic/display-smallpic"
+    },
+    "navigationBarTitleText": "《主题1》展览"
+  }

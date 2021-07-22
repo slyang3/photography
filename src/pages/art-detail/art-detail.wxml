@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+    <product_pic productList="{{productList}}"/>
+    <display-smallpic smallImgList="{{smallImgList}}" />
+</view>

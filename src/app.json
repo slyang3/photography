@@ -6,7 +6,11 @@
     "pages/my/my",
     "pages/art/art",
     "pages/contribution/contribution",
-    "pages/school/school"
+    "pages/school/school",
+    "pages/school-pub/school-pub",
+    "pages/alumni/alumni",
+    "pages/art-detail/art-detail",
+    "pages/photo-detail/photo-detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

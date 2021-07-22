@@ -35,5 +35,17 @@ Page({
 		this.setData({
 			navItem:e.currentTarget.dataset.index
 		})
+	},
+
+	pubInfo() {
+		wx.navigateTo({
+			url: '/pages/school-pub/school-pub'
+		})
+	},
+
+	lookAlumni() {
+		wx.navigateTo({
+			url: '/pages/alumni/alumni'
+		})
 	}
 })

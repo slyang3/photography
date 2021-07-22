@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="main">
+        <view class="label">企业名称</view>
+        <input type="text" placeholder="请输入企业名称" placeholder-class="input-placeholder" />
+        <view class="label">企业LOGO</view>
+        <view class="choose_time">
+            <view class="picker small">
+                请上传企业LOGO
+            </view>
+            <image src="/assets/image/icon_right.png" />
+        </view>
+        <view class="label">企业简介</view>
+        <textarea class="descript" name="descript" placeholder-class="textarea-placeholder" placeholder="请填写企业简介…"></textarea>
+        <view class="label">企业分类</view>
+        <view class="choose_time">
+            <picker value="{{typeIndex}}" range="{{typeArray}}" bindchange="bindTypeChange">
+                <view class="picker" wx:if="{{!(typeIndex < 0)}}">
+                {{typeArray[typeIndex]}}
+                </view>
+                <view class="picker small" wx:else>
+                请选择企业分类
+                </view>
+            </picker>
+            <image src="/assets/image/icon_right.png" />
+        </view>
+        <view class="label">企业标签</view>
+        <view class="choose_time">
+            <picker value="{{labelIndex}}" range="{{labelArray}}" bindchange="bindLabelChange">
+                <view class="picker" wx:if="{{!(labelIndex < 0)}}">
+                {{labelArray[labelIndex]}}
+                </view>
+                <view class="picker small" wx:else>
+                请选择企业标签
+                </view>
+            </picker>
+            <image src="/assets/image/icon_right.png" />
+        </view>
+        <view class="label">与企业关系</view>
+        <view class="choose_time">
+            <picker value="{{index}}" range="{{array}}" bindchange="bindPickerChange">
+                <view class="picker" wx:if="{{!(index < 0)}}">
+                {{array[index]}}
+                </view>
+                <view class="picker small" wx:else>
+                请选择企业身份
+                </view>
+            </picker>
+            <image src="/assets/image/icon_right.png" />
+        </view>
+        <view class="label">企业联系人姓名</view>
+        <input type="text" placeholder="请输入企业联系人姓名" placeholder-class="input-placeholder" />
+        <view class="label">企业联系人电话</view>
+        <input type="text" placeholder="请输入企业联系人电话" placeholder-class="input-placeholder" />
+        <view class="label">企业联系人邮箱</view>
+        <input type="text" placeholder="请输入企业联系人邮箱" placeholder-class="input-placeholder" />
+        <view class="label">驻留时间</view>
+        <view class="choose_time">
+            <picker value="{{dateIndex}}" range="{{dateArray}}" bindchange="bindDateChange">
+                <view class="picker" wx:if="{{!(dateIndex < 0)}}">
+                {{dateArray[dateIndex]}}
+                </view>
+                <view class="picker small" wx:else>
+                请选择驻留时间
+                </view>
+            </picker>
+            <image src="/assets/image/icon_right.png" />
+        </view>
+
+        <text class="tips">温馨提示：</text>
+        <text class="tips">提示信息文本提示信息文本提示信息文本提示信息文本提示信息文本提示信息文本提示信息文本</text>
+
+        <view class="bottom">
+            <view class="left">保存草稿</view>
+            <view class="right">提交审核</view>
+        </view>
+    
+    </view>
+</view>

@@ -41,6 +41,30 @@
           "pathName": "pages/school/school",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/school-pub/school-pub",
+          "pathName": "pages/school-pub/school-pub",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/alumni/alumni",
+          "pathName": "pages/alumni/alumni",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/photo-detail/photo-detail",
+          "pathName": "pages/photo-detail/photo-detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/art-detail/art-detail",
+          "pathName": "pages/art-detail/art-detail",
+          "query": "",
+          "scene": null
         }
       ]
     }

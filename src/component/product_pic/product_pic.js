@@ -12,6 +12,10 @@ Component({
     },
     
     methods:{
-        
+        lookArtDetail() {
+            wx.navigateTo({
+                url:'/pages/art-detail/art-detail'
+            })
+        }
     }
 })

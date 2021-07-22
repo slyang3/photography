@@ -1,0 +1,52 @@
+<view class="container">
+    <view class="main">
+        <view class="content">
+            <person-model personList="{{personList}}"/>
+        </view>
+
+        <display-smallpic smallImgList="{{smallImgList}}" />
+
+        <view class="header_info">
+            <!-- <image class="icon_film" src="/assets/image/icon_film.png" /> -->
+            <view class="header_word_info">
+                <text class="name">校企推荐</text>
+            </view>
+        </view>
+        <view class="school_info">
+            <view class="school_info_top">
+                <view class="company_list">
+                    <image src="{{companyInfo.logo}}" />
+                    <view class="company_info">
+                        <view class="company_header">
+                            <text class="name">{{companyInfo.name}}</text>
+                            <view class="label">
+                                <text wx:for="{{companyInfo.labelList}}">{{item}}</text>
+                            </view>
+                        </view>
+                        <text class="company_intro">{{companyInfo.introduce}}</text>
+                    </view>
+                </view>
+            </view>
+
+            <view class="school_info_bottom">
+                <view class="list">
+                    <text>推荐校友：</text>
+                    <text>X-Ray李</text>
+                </view>
+                <view class="list">
+                    <text>与推荐企业关系：</text>
+                    <text>老板</text>
+                </view>
+                <view class="list">
+                    <text>联系电话：</text>
+                    <text>18375338537</text>
+                </view>
+            </view>
+        </view>
+
+        <view class="index_pub">
+            <text>主页发布</text>
+            <image src="/assets/image/icon_right.png" />
+        </view>
+    </view>
+</view>
