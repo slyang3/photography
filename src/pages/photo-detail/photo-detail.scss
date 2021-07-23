@@ -69,48 +69,6 @@
                 }
             }
         }
-
-        .opearte {
-            padding: 0 40rpx;
-            margin-top: 34rpx;
-            height: 120rpx;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            background: #EFEFF3;
-    
-            .left {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-    
-                .left_menu {
-                    &:nth-child(2) {
-                        margin-left: 39rpx;
-                    }
-                }
-            }
-    
-            .left_menu {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-    
-                image {
-                    width: 36rpx;
-                    height: 36rpx;
-                }
-    
-                text {
-                    margin-left: 10rpx;
-                    font-family: PingFangSC-Regular;
-                    font-size: 24rpx;
-                    color: #666666;
-                    font-weight: 400;
-                }
-            }
-        }
         
     }
 }

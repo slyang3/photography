@@ -20,7 +20,9 @@
         <view class="descript">
             {{item.descript}}
         </view>
-        <view class="opearte" wx:if="{{!item.isNotShowOperate}}">
+
+        <opearte-list wx:if="{{!item.isNotShowOperate}}" type="1"/>
+        <!-- <view class="opearte" wx:if="{{!item.isNotShowOperate}}">
             <view class="left">
                 <view class="left_menu">
                     <image src="/assets/image/icon_share.png" />
@@ -39,6 +41,6 @@
                     <text>{{item.thumbsUpNum}}</text>
                 </view>
             </view>
-        </view>
+        </view> -->
     </block>
 </view>

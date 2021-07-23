@@ -33,5 +33,13 @@ Page({
 		this.setData({
 		  date: e.detail.value
 		})
+	},
+
+	del(e) {
+		let _imgList = this.data.imgList;
+		_imgList.splice(e.currentTarget.dataset.index)
+		this.setData({
+			imgList:_imgList
+		})
 	}
 })

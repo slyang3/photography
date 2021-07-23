@@ -1,7 +1,8 @@
 {
     "usingComponents": {
         "banner":"../../component/banner/banner",
-        "product_pic":"../../component/product_pic/product_pic"
+        "product_pic":"../../component/product_pic/product_pic",
+        "opearte-list":"../../component/opearte-list/opearte-list"
     },
     "navigationBarTitleText": "《主题1》展览"
   }

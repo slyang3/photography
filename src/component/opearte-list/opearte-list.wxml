@@ -1,0 +1,20 @@
+ <view class="opearte {{type == 1?'opearte_one':''}}">
+    <view class="left">
+        <button class="left_menu btn share_btn" open-type="share">
+            <image src="/assets/image/icon_share.png" />
+            <text>分享</text>
+        </button>
+
+        <view class="left_menu">
+            <image src="/assets/image/icon_msg.png" />
+            <text>1234</text>
+        </view>
+    </view>
+
+    <view class="right">
+        <view class="left_menu">
+            <image src="/assets/image/icon_dianzan.png" />
+            <text>465</text>
+        </view>
+    </view>
+</view>

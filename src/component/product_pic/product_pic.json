@@ -1,4 +1,5 @@
 {
     "usingComponents": {
+        "opearte-list":"../../component/opearte-list/opearte-list"
     }
 }

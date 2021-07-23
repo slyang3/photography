@@ -6,6 +6,11 @@ Component({
         productList:{
             type:Object,
             value:null
+        },
+
+        formPage:{
+            type:Number,
+            value:0
         }
     },
     data:{
@@ -13,6 +18,7 @@ Component({
     
     methods:{
         lookArtDetail() {
+            if(this.data.formPage > 0) {return;}
             wx.navigateTo({
                 url:'/pages/art-detail/art-detail'
             })

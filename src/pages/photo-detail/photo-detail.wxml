@@ -27,25 +27,6 @@
             </view>
         </view>
 
-        <view class="opearte">
-            <view class="left">
-                <view class="left_menu">
-                    <image src="/assets/image/icon_share.png" />
-                    <text>分享</text>
-                </view>
-
-                <view class="left_menu">
-                    <image src="/assets/image/icon_msg.png" />
-                    <text>1234</text>
-                </view>
-            </view>
-
-            <view class="right">
-                <view class="left_menu">
-                    <image src="/assets/image/icon_dianzan.png" />
-                    <text>465</text>
-                </view>
-            </view>
-        </view>
+        <opearte-list />
     </view>
 </view>

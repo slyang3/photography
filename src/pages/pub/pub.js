@@ -26,6 +26,14 @@ Page({
 		},
       	fail:  (err) => {}
     });
+  },
+
+  del(e) {
+	let _imgList = this.data.imgList;
+	_imgList.splice(e.currentTarget.dataset.index)
+	this.setData({
+		imgList:_imgList
+	})
   }
   
 })

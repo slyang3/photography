@@ -31,7 +31,7 @@
             <view class="up_img_list {{imgList.length > 0?'up_img_list_margin':''}}">
                 <view class="img_li" wx:for="{{imgList}}">
                     <image class="pic" src="{{item}}" />
-                    <image class="icon_close" src="/assets/image/icon_close.png" />
+                    <image bind:tap="del" data-index="{{index}}" class="icon_close" src="/assets/image/icon_close.png" />
                 </view>
                 <view class="img_li">
                     <image class="img_demo" bindtap="chooseImage" src="/assets/image/icon_add_pic.png" />
