@@ -14,3 +14,216 @@
     color: transparent;
     display: none;
 }
+
+
+
+/*Flexbox*/
+
+.flex {
+  /* 设置弹性布局 */
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+}
+
+/*默认水平布局，设置纵向加标签 */
+
+.flex-direction-column {
+  /* 设置弹性布局的方向，子元素按照在源文档中声明的顺序从上到下显示 */
+  -webkit-box-orient: vertical;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex-direction: column;
+  /* Chrome 21+ */
+  flex-direction: column;
+  /* android 4.4 */
+}
+
+/*对齐－顺向位置*/
+
+.flex-pack-center {
+  -webkit-box-pack: center;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-justify-content: center;
+  /* Chrome 21+ */
+  justify-content: center;
+  /* android 4.4 */
+}
+
+.flex-pack-start {
+  -webkit-box-pack: start;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-justify-content: flex-start;
+  /* Chrome 21+ */
+  justify-content: flex-start;
+  /* android 4.4 */
+}
+
+.flex-pack-end {
+  -webkit-box-pack: end;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-justify-content: flex-end;
+  /* Chrome 21+ */
+  justify-content: flex-end;
+  /* android 4.4 */
+}
+
+.flex-pack-justify {
+  -webkit-box-pack: justify;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-justify-content: space-between;
+  /* Chrome 21+ */
+  justify-content: space-between;
+  /* android 4.4 */
+}
+
+.flex-pack-around {
+  -webkit-justify-content: space-around;
+  /* Chrome 21+ */
+  justify-content: space-around;
+  /* android 4.4 */
+}
+
+/*对齐－垂向位置*/
+
+.flex-align-center {
+  -webkit-box-align: center;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-align-items: center;
+  /* Chrome 21+ */
+  align-items: center;
+  /* android 4.4 */
+}
+
+.flex-align-start {
+  -webkit-box-align: start;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-align-items: flex-start;
+  /* Chrome 21+ */
+  align-items: flex-start;
+  /* android 4.4 */
+}
+
+.flex-align-end {
+  -webkit-box-align: end;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-align-items: flex-end;
+  /* Chrome 21+ */
+  align-items: flex-end;
+  /* android 4.4 */
+}
+
+.flex-align-baseline {
+  -webkit-box-align: baseline;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-align-items: baseline;
+  /* Chrome 21+ */
+  align-items: baseline;
+  /* android 4.4 */
+}
+
+.flex-align-stretch {
+  -webkit-box-align: stretch;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-align-items: stretch;
+  /* Chrome 21+ */
+  align-items: stretch;
+  /* android 4.4 */
+}
+
+/* 子元素自动占据剩余的空间 */
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 1;
+  /* Chrome 21+ */
+  flex: 1;
+  /* android 4.4 */
+}
+
+.flex-2 {
+  -webkit-box-flex: 2;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 2;
+  /* Chrome 21+ */
+  flex: 2;
+  /* android 4.4 */
+}
+
+.flex-3 {
+  -webkit-box-flex: 3;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 3;
+  /* Chrome 21+ */
+  flex: 3;
+  /* android 4.4 */
+}
+
+.flex-4 {
+  -webkit-box-flex: 4;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 4;
+  /* Chrome 21+ */
+  flex: 4;
+  /* android 4.4 */
+}
+
+.flex-5 {
+  -webkit-box-flex: 5;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 5;
+  /* Chrome 21+ */
+  flex: 5;
+  /* android 4.4 */
+}
+
+.flex-6 {
+  -webkit-box-flex: 6;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 6;
+  /* Chrome 21+ */
+  flex: 6;
+  /* android 4.4 */
+}
+
+.flex-7 {
+  -webkit-box-flex: 7;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 7;
+  /* Chrome 21+ */
+  flex: 7;
+  /* android 4.4 */
+}
+
+.flex-8 {
+  -webkit-box-flex: 8;
+  /* android 2.1-3.0, ios 3.2-4.3 */
+  -webkit-flex: 8;
+  /* Chrome 21+ */
+  flex: 8;
+  /* android 4.4 */
+}
+
+.flex-w {
+  width: 1px;
+}
+
+.flex-wrap {
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.border-box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.content-box{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}

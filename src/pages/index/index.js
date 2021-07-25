@@ -35,7 +35,8 @@ Page({
 			shareNum: '',
 			msgNum: 1023,
 			thumbsUpNum: 189
-		}]
+		}],
+		isShow:false
 	},
 
 	onLoad() {
@@ -73,5 +74,17 @@ Page({
 			default:
 				break;
 		}
+	},
+
+	showComment() {
+		this.setData({
+			isShow:true
+		})
+	},
+
+	delCommentDiolog() {
+		this.setData({
+			isShow:false
+		})
 	}
 })

@@ -5,7 +5,7 @@
             <text>分享</text>
         </button>
 
-        <view class="left_menu">
+        <view class="left_menu" bind:tap="showComment">
             <image src="/assets/image/icon_msg.png" />
             <text>1234</text>
         </view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "photo-work-item": "../../component/photo-work-item/photo-work-item"
+  }
+}

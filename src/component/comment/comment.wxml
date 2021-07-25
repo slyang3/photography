@@ -1,0 +1,122 @@
+<view class="comment {{type == 1?'comment_index':''}}">
+    <image class="icon_close" bind:tap="del" src="/assets/image/icon_close.png" />
+    <text class="num_title">1118条评论</text>
+    <view class="comment_list comment_list_top">
+        <image class="header" src="/assets/image/demo1.png"/>
+        <view class="comment_content">
+            <view class="name_list">
+                <text class="name">X-Ray李·19届03班</text>
+                <view class="other_opearte">
+                    <view class="other_opearte_1">
+                        <image src="/assets/image/icon_msg.png" />
+                        <text>2</text>
+                    </view>
+                    <view class="other_opearte_1 other_opearte_2">
+                        <image src="/assets/image/icon_dianzan.png" />
+                        <text>7</text>
+                    </view>
+                </view>
+            </view>
+            <text class="comment_desc">我们不只是用相机拍照，我们带到摄影中去的是所有我们读过的书、看过的电影、听过的</text>
+            <text class="comment_time">2021-06-26</text>
+
+            <view class="comment_list">
+                <image class="header header_second" src="/assets/image/demo1.png"/>
+                <view class="comment_content">
+                    <view class="name_list">
+                        <text class="name">X-Ray李·20届03班</text>
+                        <view class="other_opearte">
+                            <view class="other_opearte_1 other_opearte_2">
+                                <image src="/assets/image/icon_dianzan.png" />
+                                <text>7</text>
+                            </view>
+                        </view>
+                    </view>
+                    <text class="comment_desc">你真的很好棒呢</text>
+                    <text class="comment_time">2021-06-26</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="comment_list">
+        <image class="header" src="/assets/image/demo1.png"/>
+        <view class="comment_content">
+            <view class="name_list">
+                <text class="name">X-Ray李·19届03班</text>
+                <view class="other_opearte">
+                    <view class="other_opearte_1">
+                        <image src="/assets/image/icon_msg.png" />
+                        <text>2</text>
+                    </view>
+                    <view class="other_opearte_1 other_opearte_2">
+                        <image src="/assets/image/icon_dianzan.png" />
+                        <text>7</text>
+                    </view>
+                </view>
+            </view>
+            <text class="comment_desc">我们不只是用相机拍照，我们带到摄影中去的是所有我们读过的书、看过的电影、听过的</text>
+            <text class="comment_time">2021-06-26</text>
+
+            <view class="comment_list">
+                <image class="header header_second" src="/assets/image/demo1.png"/>
+                <view class="comment_content">
+                    <view class="name_list">
+                        <text class="name">X-Ray李·20届03班</text>
+                        <view class="other_opearte">
+                            <view class="other_opearte_1 other_opearte_2">
+                                <image src="/assets/image/icon_dianzan.png" />
+                                <text>7</text>
+                            </view>
+                        </view>
+                    </view>
+                    <text class="comment_desc">你真的很好棒呢</text>
+                    <text class="comment_time">2021-06-26</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="comment_list">
+        <image class="header" src="/assets/image/demo1.png"/>
+        <view class="comment_content">
+            <view class="name_list">
+                <text class="name">X-Ray李·19届03班</text>
+                <view class="other_opearte">
+                    <view class="other_opearte_1">
+                        <image src="/assets/image/icon_msg.png" />
+                        <text>2</text>
+                    </view>
+                    <view class="other_opearte_1 other_opearte_2">
+                        <image src="/assets/image/icon_dianzan.png" />
+                        <text>7</text>
+                    </view>
+                </view>
+            </view>
+            <text class="comment_desc">我们不只是用相机拍照，我们带到摄影中去的是所有我们读过的书、看过的电影、听过的</text>
+            <text class="comment_time">2021-06-26</text>
+
+            <view class="comment_list">
+                <image class="header header_second" src="/assets/image/demo1.png"/>
+                <view class="comment_content">
+                    <view class="name_list">
+                        <text class="name">X-Ray李·20届03班</text>
+                        <view class="other_opearte">
+                            <view class="other_opearte_1 other_opearte_2">
+                                <image src="/assets/image/icon_dianzan.png" />
+                                <text>7</text>
+                            </view>
+                        </view>
+                    </view>
+                    <text class="comment_desc">你真的很好棒呢</text>
+                    <text class="comment_time">2021-06-26</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="send_message_content">
+        <input placeholder="期待您的评论~" placeholder-class="input-placeholder"/>
+        <button>发送</button>
+    </view>
+</view>

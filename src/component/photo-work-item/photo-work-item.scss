@@ -1,0 +1,49 @@
+/* component/photo-work-item/photo-work-item.wxss */
+.photo-work-item {
+    position: relative;
+    margin-bottom: 30rpx;
+    padding-bottom: 50rpx;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  
+  .photo-work-item .item-state {
+    min-width: 140rpx;
+    padding: 4rpx 8rpx;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(91deg, #08B9FF 0%, #0A54EA 100%);
+    border-radius: 6rpx;
+    font-size: 24rpx;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .photo-work-item .item-state.end {
+    background-image: linear-gradient(90deg, #5A5A5A 0%, #000000 100%);
+  }
+  
+  .photo-work-item .photo-img image {
+    width: 100%;
+    height: 340rpx;
+  }
+  
+  .photo-work-item .photo-title {
+    margin: 30rpx 0;
+    color: #333333;
+    font-size: 28rpx;
+    font-weight: 600;
+  }
+  
+  .photo-work-item .photo-title image {
+    width: 36rpx;
+    height: 36rpx;
+    padding-right: 16rpx;
+  }
+  
+  .photo-work-item .photo-desc {
+    font-size: 24rpx;
+    color: #999999;
+    font-weight: 400;
+  }

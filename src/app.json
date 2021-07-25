@@ -10,7 +10,9 @@
     "pages/school-pub/school-pub",
     "pages/alumni/alumni",
     "pages/art-detail/art-detail",
-    "pages/photo-detail/photo-detail"
+    "pages/photo-detail/photo-detail",
+    "pages/competition/competition",
+    "pages/competitionDetail/competitionDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

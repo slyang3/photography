@@ -22,6 +22,10 @@ Component({
             wx.navigateTo({
                 url:'/pages/art-detail/art-detail'
             })
+        },
+
+        showComment() {
+            this.triggerEvent('showComment')
         }
     }
 })

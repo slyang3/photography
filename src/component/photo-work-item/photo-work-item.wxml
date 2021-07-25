@@ -1,0 +1,15 @@
+<!--component/photo-work-item/photo-work-item.wxml-->
+<view class="photo-work-item">
+    <view class="photo-img">
+      <view class="item-state end" wx:if="{{itemData.state === 0}}">已结束</view>
+      <view class="item-state" wx:else>距离截稿{{itemData.deadline}}天</view>
+      <image src="{{itemData.imgUrl}}"></image>
+    </view>
+    <view class="photo-title flex flex-align-center">
+      <image src="../../assets/image/icon_zhenji.png"></image>
+      <text>{{itemData.title}}</text>
+    </view>
+    <view class="photo-desc">
+      {{itemData.desc}}
+    </view>
+  </view>

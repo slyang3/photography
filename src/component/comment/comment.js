@@ -12,8 +12,8 @@ Component({
     },
     
     methods:{
-        showComment() {
-            this.triggerEvent('showComment')
+        del() {
+            this.triggerEvent('delCommentDiolog')
         }
     }
 })

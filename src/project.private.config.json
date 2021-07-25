@@ -65,6 +65,18 @@
           "pathName": "pages/art-detail/art-detail",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/competition/competition",
+          "pathName": "pages/competition/competition",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/competitionDetail/competitionDetail",
+          "pathName": "pages/competitionDetail/competitionDetail",
+          "query": "",
+          "scene": null
         }
       ]
     }

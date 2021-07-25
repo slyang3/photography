@@ -21,7 +21,7 @@
             {{item.descript}}
         </view>
 
-        <opearte-list wx:if="{{!item.isNotShowOperate}}" type="1"/>
+        <opearte-list wx:if="{{!item.isNotShowOperate}}" type="1" bind:showComment="showComment"/>
         <!-- <view class="opearte" wx:if="{{!item.isNotShowOperate}}">
             <view class="left">
                 <view class="left_menu">

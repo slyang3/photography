@@ -1,0 +1,20 @@
+<!--pages/competition/competition.wxml-->
+<view class="competition-page-wrapper">
+  <view wx:for="{{listData}}" wx:key="*this" wx:for-index="idx" wx:for-item="item">
+    <photo-work-item itemData="{{item}}"></photo-work-item>
+  </view>
+  <!-- <view class="photo-work-item" wx:for="{{listData}}" wx:key="*this" wx:for-index="idx" wx:for-item="item">
+    <view class="photo-img">
+      <view class="item-state end" wx:if="{{item.state === 0}}">已结束</view>
+      <view class="item-state" wx:else>距离截稿{{item.deadline}}天</view>
+      <image src="{{item.imgUrl}}"></image>
+    </view>
+    <view class="photo-title">
+      <image src="../../assets/image/icon_zhenji.png"></image>
+      <text>{{item.title}}</text>
+    </view>
+    <view class="photo-desc">
+      {{item.desc}}
+    </view>
+  </view> -->
+</view>

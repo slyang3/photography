@@ -11,8 +11,9 @@
             </view>
         </view>
 
-        <product_pic productList="{{productList}}"/>
+        <product_pic productList="{{productList}}" bind:showComment="showComment"/>
     </view>
 
+    <comment type="1" wx:if="{{isShow}}" bind:delCommentDiolog="delCommentDiolog"/>
     <tabbar/>
 </view>

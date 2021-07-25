@@ -1,0 +1,83 @@
+/* pages/competitionDetail/competitionDetail.wxss */
+.competition-detail-page-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #FFF;
+  }
+  
+  .competition-detail-page-wrapper .competition-detail-top {
+    padding: 30rpx;
+  }
+  
+  .competition-detail-page-wrapper .competition-rule-wrap image {
+    width: 28rpx;
+    height: 34rpx;
+    padding-right: 16rpx;
+  }
+  
+  .competition-detail-page-wrapper .rule-content {
+    color: #999;
+    font-size: 24rpx;
+    margin: 24rpx 0;
+  }
+  
+  .competition-detail-page-wrapper .rule-content view {
+    margin-bottom: 30rpx;
+  }
+  
+  .competition-detail-page-wrapper .tabs-wrap {
+    padding: 0 36rpx 24rpx;
+    border-bottom: 4rpx solid #E4E4E4;
+  }
+  
+  .competition-detail-page-wrapper .tabs-wrap .tab-item {
+    padding: 0 16rpx;
+    font-size: 24rpx;
+    color: #999;
+  }
+  
+  .competition-detail-page-wrapper .tabs-wrap .tab-item.selected {
+    position: relative;
+    font-size: 28rpx;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .competition-detail-page-wrapper .tabs-wrap .tab-item.selected::after {
+    content: ' ';
+    display: inline-block;
+    height: 10rpx;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -26rpx;
+    background-image: linear-gradient(90deg, #383838 0%, #000000 100%);
+    border-radius: 10rpx;
+  }
+  
+  .competition-detail-page-wrapper .tab-content-wrap {
+    padding: 30rpx;
+  }
+  
+  .competition-detail-page-wrapper .tab-content-wrap .list-item {
+    padding-bottom: 42rpx;
+    margin-bottom: 40rpx;
+    border-bottom: 1px solid #DFDFDF;
+  }
+  
+  .competition-detail-page-wrapper .tab-content-wrap .list-item image {
+    width: 100%;
+    height: 340rpx;
+  }
+  
+  .competition-detail-page-wrapper .tab-content-wrap .list-item .work-title {
+    font-size: 28rpx;
+    color: #333;
+  }
+  
+  .competition-detail-page-wrapper .tab-content-wrap .list-item .work-title image {
+    width: 48rpx;
+    height: 48rpx;
+    padding-left: 12rpx;
+  }

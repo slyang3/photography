@@ -2,6 +2,7 @@
   "usingComponents": {
     "product_pic": "../../component/product_pic/product_pic",
     "tabbar": "../../component/tabbar/tabbar",
-    "banner":"../../component/banner/banner"
+    "banner":"../../component/banner/banner",
+    "comment":"../../component/comment/comment"
   }
 }

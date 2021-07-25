@@ -1,0 +1,38 @@
+<!--pages/competitionDetail/competitionDetail.wxml-->
+<view class="competition-detail-page-wrapper">
+  <view class="competition-detail-top">
+    <photo-work-item itemData="{{itemData}}"></photo-work-item>
+    <view class="competition-rule-wrap">
+      <view class="rule-title flex flex-align-center">
+        <image src="../../assets/image/icon_rule.png"></image>
+        <text>投票规则</text>
+      </view>
+      <view class="rule-content">
+        <view>1.投票规则文本投票规则文本投票规则文本投票规则文本投票规则投票规则文本投票规则文本投票规则文本投票规则文本投票规则投票规则文本投票规则文本投票规则文本投票规则文本投票规则</view>
+        <view>2.投票规则文本投票规则文本投票规则文本投票规则文本投票规则</view>
+        <view>3.投票规则文本投票规则文本投票规则文本投票规则文本投票规则</view>
+      </view>
+    </view>
+  </view>
+  <view class="tabs-wrap flex flex-align-center">
+    <!-- <view class="tab-item selected">参赛作品</view> -->
+    <view class="tab-item {{item.key === tabSelectedKey ? 'selected' : ''}}" wx:for="{{tabList}}" wx:key="*this" wx:for-index="idx" wx:for-item="item" bindtap="switchTabItemHandle" data-item="{{item}}">{{item.label}}</view>
+  </view>
+  <view class="tab-content-wrap">
+    <view class="list-item"  wx:for="{{listData}}" wx:key="*this" wx:for-index="idx" wx:for-item="item">
+      <view class="work-img">
+        <image src="{{item.imgUrl}}"></image>
+      </view>
+      <view class="work-title flex flex-pack-justify flex-align-center">
+        <view class="left-part">{{item.title}}</view>
+        <view class="right-part flex flex-pack-justify flex-align-center">
+          <text>{{item.votes}}票</text>
+          <view bindtap="likeClickHandle" data-index="{{idx}}">
+            <image src="../../assets/image/icon_heart_select.png" wx:if="{{item.isLike}}"></image>
+          <image src="../../assets/image/icon_heart.png" wx:else></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
